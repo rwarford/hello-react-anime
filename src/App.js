@@ -1,3 +1,5 @@
+// App.js
+
 import React, { useRef, useEffect } from "react";
 import ReactDOM from "react-dom";
 import anime from 'animejs';
@@ -6,7 +8,6 @@ const App = () => {
   const refHello = useRef(null);
 
   useEffect(() => {
-    console.log(refHello.current);
     anime({
       targets: refHello.current,
       translateX: 250
